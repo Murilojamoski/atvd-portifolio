@@ -1,0 +1,92 @@
+
+/*================================================
+    CSS RESET  
+=================================================*/
+
+   * {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    }
+
+/*================================================
+    Formataçao geral 
+=================================================*/
+   
+    html {
+    font-size: calc(8px + 1vw);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #21243d;
+    }
+    html body a{
+        text-decoration: none;
+        color: #21243d;
+    }
+
+/*================================================
+ formataçao do topo da pagina bora bill
+=================================================*/
+    header{
+        margin: 0vw 5vw 3vw 5vw;
+    }        
+    header nav ul{
+        display: flex;
+        justify-content: right;
+    }
+    header nav li{
+        margin: 0px 10px 0 10px;
+    }
+    header nav ul li.atual a{
+        color: #FF6464;
+    }
+    
+    main.works{
+        margin: 0vw 25vw 0vw 25vw;
+    }
+    main.works h1{
+        font-weight: normal;
+        margin: 0vw 0vw -2vw 0vw;
+
+    }
+    main.works section p{
+        margin: 1vw 0vw 2vw 0vw;
+    }
+    main.works section{
+        border-bottom: 1px solid #e0e0e0;
+        padding: 4vw 0vw 4vw 0vw;
+    }
+    main span{
+        background-color: #FF6464;
+        border-radius: 200px;
+        padding: 3px;
+        color: white;
+        margin: 0px 7px 0px 0px;
+        font-weight: bold;
+    }
+    h3{
+        font-weight: normal;
+        margin: 2vw 0px 2vw 0px;
+    }
+    img{
+        max-width: 100%;
+    }
+    /*================================================
+    formataçao do rodape da pagina 
+    =================================================*/
+    footer{
+        padding: 1vw 0 2vw 0;
+        text-align: center;
+    }
+    footer nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    footer li{
+        margin: 0vw 1vw 0vw 1vw;
+        font-size: calc(20px + 1vw);
+    }
+    footer span{
+        color: #21243d;
+    }
