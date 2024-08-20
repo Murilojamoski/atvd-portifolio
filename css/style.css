@@ -24,6 +24,9 @@
         text-decoration: none;
         color: #21243d;
     }
+    main{
+        margin: 0vw 20vw 0vw 20vw;
+    }
 
 /*================================================
  formataçao do topo da pagina bora bill
@@ -41,10 +44,11 @@
     header nav ul li.atual a{
         color: #FF6464;
     }
-    
-    main.works{
-        margin: 0vw 25vw 0vw 25vw;
-    }
+    /*================================================
+    formataçao do works
+    =================================================*/
+
+   
     main.works h1{
         font-weight: normal;
         margin: 0vw 0vw -2vw 0vw;
@@ -57,7 +61,7 @@
         border-bottom: 1px solid #e0e0e0;
         padding: 4vw 0vw 4vw 0vw;
     }
-    main span{
+    main.works span{
         background-color: #FF6464;
         border-radius: 200px;
         padding: 3px;
@@ -65,12 +69,98 @@
         margin: 0px 7px 0px 0px;
         font-weight: bold;
     }
-    h3{
+    main.works h3{
         font-weight: normal;
         margin: 2vw 0px 2vw 0px;
     }
-    img{
+    main.works img{
         max-width: 100%;
+    }
+     /*================================================
+    formataçao do inicio
+    =================================================*/
+
+    section.banner {
+        display: flex;
+        margin: 8vw 0vw 5vw 0vw;
+
+    }
+    section.banner img{
+        height: 20vw;
+        margin: 0px 0px 0px 3vw;
+    }
+    button.dowload{
+        padding: 1vw;
+        background-color: #FF6464;
+        color: white;
+        font-size: calc(7px + 1vw);
+        margin: 3vw 0vw 0vw 0vw;
+        font-weight: bolder;
+    }
+    section.banner h1{
+        margin-bottom: 2vw;
+        font-size: 2rem;
+    }
+    section.banner p {
+        font-size: calc(5px + 1vw);
+    }
+    section.post div.container{
+        display: flex;
+        border: #FF6464 solid;
+        padding: 9vw; 
+    }
+    section.post{
+        background-color: #EDF7FA;
+    } 
+    section.post h3{
+        margin: 0px 0px 2vw 0px;
+    }
+    section.post span{
+        padding: 10%;
+    }
+    section.post ul{
+        display: flex;
+    }
+    section.post li{
+        background-color: white;
+        margin: 1vw;
+        padding: 2vw;
+    }
+    section.post p.Pitens{
+        margin-bottom: 20px;
+    }
+    section.post h2{
+        font-weight: normal;
+    }
+    section.MenuWorks ul{
+        display: flex;;        
+    }
+    section.MenuWorks li{
+        background-color: white;
+        margin: 1vw;
+        padding: 2vw;
+        overflow: hidden;
+    }
+    section.MenuWorks div{
+        border: #21243d solid;
+    }
+    section.MenuWorks img{
+        width: 25vw;
+        height: 20vw;
+    }
+    section.MenuWorks h2{
+        font-weight: normal;
+        margin-top: 3vw;
+    }
+    section.MenuWorks span{
+        background-color: #142850;
+        color: white;
+        border-radius: 20px;
+        padding: 2px;
+        font-weight: bolder;
+    }
+    section.MenuWorks p.nome{
+        color: antiquewhite
     }
     /*================================================
     formataçao do rodape da pagina 
