@@ -27,6 +27,13 @@
     main{
         margin: 0vw 20vw 0vw 20vw;
     }
+    li{
+        transition: .5s;
+    }
+    li:hover{
+        scale: 103%;
+    }
+    
 
 /*================================================
  formataçao do topo da pagina bora bill
@@ -79,7 +86,7 @@
      /*================================================
     formataçao do inicio
     =================================================*/
-
+    
     section.banner {
         display: flex;
         margin: 8vw 0vw 5vw 0vw;
@@ -93,9 +100,20 @@
         padding: 1vw;
         background-color: #FF6464;
         color: white;
-        font-size: calc(7px + 1vw);
+        font-size: calc(6px + 1vw);
         margin: 3vw 0vw 0vw 0vw;
         font-weight: bolder;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+        border: #FF6464 solid;
+    }
+    button.dowload:hover{
+        color: #FF6464;
+        cursor: pointer;
+        border: #FF6464 solid;
+        background-color: white;
+    }
+    button.dowload:active{
+        opacity: 50%;
     }
     section.banner h1{
         margin-bottom: 2vw;
@@ -133,40 +151,52 @@
         font-weight: normal;
     }
     section.MenuWorks ul{
-        display: flex;;        
+        display: flex; 
+        justify-content: space-between;
     }
     section.MenuWorks li{
-        background-color: white;
-        margin: 1vw;
-        padding: 2vw;
-        overflow: hidden;
+        flex: 1 1 100%; 
+        margin: 2vw 1vw 0 0;
     }
-    section.MenuWorks div{
-        border: #21243d solid;
+    section.MenuWorks li:last-child{
+        margin: 2vw 0 0 0;
     }
     section.MenuWorks img{
-        width: 25vw;
-        height: 20vw;
-    }
+        width: 100%; 
+        height: auto,
+    } 
     section.MenuWorks h2{
         font-weight: normal;
         margin-top: 3vw;
     }
-    section.MenuWorks span{
+    section.MenuWorks span.worksSpan{
         background-color: #142850;
         color: white;
         border-radius: 20px;
         padding: 2px;
         font-weight: bolder;
     }
-    section.MenuWorks p.nome{
-        color: antiquewhite
+    section.MenuWorks span.nome{
+        color: #8695A4;
+        margin: 2vw;
+    }
+    .banner img:hover{
+        animation: giro 5s infinite alternate;
+    }
+    @keyframes giro{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(10000deg);
+        }
     }
     /*================================================
     formataçao do rodape da pagina 
     =================================================*/
     footer{
-        padding: 1vw 0 2vw 0;
+        
+        padding: 10vw 0 2vw 0;
         text-align: center;
     }
     footer nav ul{
